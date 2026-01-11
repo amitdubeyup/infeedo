@@ -1,4 +1,4 @@
-# infeedo
+# infeedo-interview-task
 
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
@@ -19,8 +19,8 @@ Assignment for the job!
 
 ```bash
 # Clone the repository
-git clone https://github.com/amitdubeyup/infeedo.git
-cd infeedo
+git clone https://github.com/amitdubeyup/infeedo-interview-task.git
+cd infeedo-interview-task
 
 # Install dependencies
 npm install
@@ -54,7 +54,7 @@ npm test
 ## 📁 Project Structure
 
 ```
-infeedo/
+infeedo-interview-task/
 ├── package.json
 ├── .env.example
 ├── README.md
