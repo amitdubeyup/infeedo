@@ -1,167 +1,75 @@
-# InFeedo App
+# infeedo
 
-  The project "InFeedo App" is an app for showing the task details.
-  
-## Tech Stack
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-  1. NodeJS (Version: 14+)
-  2. ExpressJS (Version: 4+)
-  4. MongoDB & Mongoose (Version: 5+)
+Assignment for the job!
 
+## 🚀 Tech Stack
 
-## Quick Start
+- Express.js
+- MongoDB
 
-Clone the repository:
+## ✨ Features
+
+- Modern and scalable architecture
+- Database integration
+- RESTful API endpoints
+
+## 📦 Installation
 
 ```bash
-$ git clone https://github.com/amitdubeyup/infeedo.git
+# Clone the repository
+git clone https://github.com/amitdubeyup/infeedo.git
+cd infeedo
+
+# Install dependencies
+npm install
 ```
 
-Goto project directory:
+## ⚙️ Configuration
+
+Create a `.env` file in the root directory:
 
 ```bash
-$ cd infeedo
+cp .env.example .env
 ```
 
-Install dependencies:
+Update the `.env` file with your configuration values.
+
+## 🚀 Usage
 
 ```bash
-$ npm install
+# Production mode
+npm start
+
+# Run tests
+npm test
 ```
 
-Start the app:
+## 📜 Available Scripts
 
-```bash
-$ npm start
+- `npm run start` - node app.js
+- `npm run test` - App is working fine!
+
+## 📁 Project Structure
+
+```
+infeedo/
+├── package.json
+├── .env.example
+├── README.md
 ```
 
-  View the app at: http://localhost:3000
+## 🤝 Contributing
 
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## REST APIs
+## 📄 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-  The REST APIs to the infeedo app are described below.
+## 👤 Author
 
+**Amit Dubey**
 
-### Create Task
-
-```bash
-  Method: POST
-  Header: { content-type: application/json }
-  URL: http://localhost:3000/api/tasks/create
-  Body: {
-    "open_tasks": 10,
-    "inprogress_tasks": 10,
-    "completed_tasks": 10
-  }
-  Response: {
-    "success": true,
-    "message": "Task created successfully.",
-    "data": {
-        "open_tasks": 10,
-        "inprogress_tasks": 10,
-        "completed_tasks": 10,
-        "_id": "652409e4fa1d2f3c56657ca3",
-        "created_at": "2023-10-09T14:10:44.405Z",
-        "updated_at": "2023-10-09T14:10:44.405Z",
-    }
-  }
- ```
-
-### Update Task
-
-```bash
-  Method: POST
-  Header: { content-type: application/json }
-  URL: http://localhost:3000/api/tasks/update
-  Body: {
-    "task_id": "652409e4fa1d2f3c56657ca3",
-    "open_tasks": 10,
-    "inprogress_tasks": 30,
-    "completed_tasks": 10
-  },
-  Response: {
-    "success": true,
-    "message": "Task updated successfully.",
-    "data": {
-        "open_tasks": 10,
-        "inprogress_tasks": 30,
-        "completed_tasks": 10,
-        "_id": "652409e4fa1d2f3c56657ca3",
-        "created_at": "2023-10-09T14:10:44.405Z",
-        "updated_at": "2023-10-09T14:10:44.405Z"
-    }
-  }
- ```
-
-### Fetch Task
-
-```bash
-  Method: GET
-  Header: { content-type: application/json }
-  URL: http://localhost:3000/api/tasks/fetch?limit=10&skip=0&filter=1
-  Response: {
-    "success": true,
-    "message": "Task fetched successfully.",
-    "have_prev": false,
-    "have_next": true,
-    "data": [
-        {
-            "open_tasks": 10,
-            "inprogress_tasks": 30,
-            "completed_tasks": 10,
-            "_id": "652409e4fa1d2f3c56657ca3",
-            "created_at": "2023-10-09T14:10:44.405Z",
-            "updated_at": "2023-10-09T14:10:44.405Z"
-        },
-        {
-            "open_tasks": 10,
-            "inprogress_tasks": 10,
-            "completed_tasks": 10,
-            "_id": "652409e3fa1d2f3c56657ca1",
-            "created_at": "2023-10-09T14:10:43.454Z",
-            "updated_at": "2023-10-09T14:10:43.454Z"
-        }
-    ]
-  }
- ```
-
-### Metric Task
-
-```bash
-  Method: GET
-  Header: { content-type: application/json }
-  URL: http://localhost:3000/api/tasks/metric
-  Response: {
-    "success": true,
-    "message": "Task metric fetched successfully.",
-    "data": [
-      {
-        "date": "Jan 2023",
-        "metrics": {
-          "open_tasks": 20,
-          "inprogress_tasks": 20,
-          "completed_tasks": 20
-        }
-      },
-      {
-        "date": "Feb 2023",
-        "metrics": {
-          "open_tasks": 30,
-          "inprogress_tasks": 30,
-          "completed_tasks": 30
-        }
-      }
-    ]
-  }
- ```
-
-
-## People
-
-The lead maintainer is [Amit Dubey](https://github.com/amitdubeyup)
-
-## License
-
-  [MIT](LICENSE)
+- GitHub: [@amitdubeyup](https://github.com/amitdubeyup)
